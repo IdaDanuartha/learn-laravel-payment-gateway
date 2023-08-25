@@ -55,4 +55,9 @@ class OrderController extends Controller
             }
         }
     }
+
+    public function invoice(Order $order)
+    {
+        return view('invoice', compact('order'));
+    }
 }

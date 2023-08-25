@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('phone', 15);
             $table->integer('qty');
             $table->bigInteger('total_price');
-            $table->enum('status', ['Unpaid', 'Paid']);
+            $table->enum('status', ['Unpaid', 'Paid'])->default('Unpaid');
             $table->timestamps();
         });
     }

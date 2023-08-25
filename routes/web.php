@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [OrderController::class, 'index']);
+Route::get('/', [OrderController::class, 'index'])->name('order.index');
+Route::post('/checkout', [OrderController::class, 'checkout'])->name('order.checkout');
